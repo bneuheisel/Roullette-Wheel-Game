@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/purpleBet"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginRight="220dp"
+        android:ems="10"
+        android:hint="@string/EnterBet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blueBet" />
+
+    <EditText
+        android:id="@+id/redBet"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginRight="220dp"
+        android:ems="10"
+        android:hint="@string/EnterBet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purpleBet" />
+
+    <EditText
+        android:id="@+id/orangeBet"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginRight="220dp"
+        android:ems="10"
+        android:hint="@string/EnterBet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redBet" />
+
+    <EditText
+        android:id="@+id/yellowBet"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginRight="220dp"
+        android:ems="10"
+        android:hint="@string/EnterBet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orangeBet" />
+
+    <EditText
+        android:id="@+id/greenBet"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginRight="220dp"
+        android:ems="10"
+        android:hint="@string/EnterBet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellowBet" />
+
+    <ImageView
+        android:id="@+id/img_wheel"
+        android:layout_width="219dp"
+        android:layout_height="340dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lifespinner" />
+
+    <TextView
+        android:id="@+id/txt_cashAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/Wallet"
+        android:textColor="#020101"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_NewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/NewGame"
+        app:layout_constraintStart_toEndOf="@+id/img_wheel"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cashAvailable" />
+
+    <TextView
+        android:id="@+id/txt_Section1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="325dp"
+        android:text="Place your bets:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/blueBet"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginRight="220dp"
+        android:ems="10"
+        android:hint="@string/EnterBet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Section1" />
+
+    <EditText
+        android:id="@+id/oneTenBet"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:hint="@string/EnterBet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Section1" />
+
+    <EditText
+        android:id="@+id/twoThreeBet"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:hint="@string/EnterBet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oneTenBet" />
+
+    <EditText
+        android:id="@+id/fourBet"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:hint="@string/EnterBet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twoThreeBet" />
+
+    <EditText
+        android:id="@+id/fiveSixBet"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:hint="@string/EnterBet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourBet" />
+
+    <EditText
+        android:id="@+id/sevenBet"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:hint="@string/EnterBet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fiveSixBet" />
+
+    <EditText
+        android:id="@+id/eightNineBet"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:hint="@string/EnterBet"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sevenBet" />
+
+    <TextView
+        android:id="@+id/Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Blue:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Section1" />
+
+    <TextView
+        android:id="@+id/Purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Purple:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Blue" />
+
+    <TextView
+        android:id="@+id/Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Red:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Purple" />
+
+    <TextView
+        android:id="@+id/Orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Orange:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Red" />
+
+    <TextView
+        android:id="@+id/Yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Yellow:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Orange" />
+
+    <TextView
+        android:id="@+id/Green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Green:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Yellow" />
+
+    <TextView
+        android:id="@+id/oneTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="1 or 10:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/blueBet"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Section1" />
+
+    <TextView
+        android:id="@+id/twoThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="2 or 3:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/blueBet"
+        app:layout_constraintTop_toBottomOf="@+id/oneTen" />
+
+    <TextView
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="4:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/blueBet"
+        app:layout_constraintTop_toBottomOf="@+id/twoThree" />
+
+    <TextView
+        android:id="@+id/fiveSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="5 or 6:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/blueBet"
+        app:layout_constraintTop_toBottomOf="@+id/four" />
+
+    <TextView
+        android:id="@+id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="7:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/blueBet"
+        app:layout_constraintTop_toBottomOf="@+id/fiveSix" />
+
+    <TextView
+        android:id="@+id/eightNine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="8 or 9:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/blueBet"
+        app:layout_constraintTop_toBottomOf="@+id/seven" />
+
+    <Button
+        android:id="@+id/btn_spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Spin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_winningPot"
+        android:layout_width="225dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Winning"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Cash: $"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/img_wheel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

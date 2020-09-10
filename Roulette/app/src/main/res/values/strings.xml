@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Roulette Wheel</string>
+    <string name="Cash">Cash: 1000</string>
+    <string name="NewGame">New Game</string>
+    <string name="EnterBet">Enter Bet</string>
+    <string name="Spin">Spin</string>
+    <string name="Winning">You won: $0</string>
+    <string name="Wallet">1000</string>
+</resources>
